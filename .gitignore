@@ -12,6 +12,7 @@ logs/
 # Environment variables
 .env
 
+*.md
 # Build artifacts
 build/
 public/build/ # If using a build directory inside public
