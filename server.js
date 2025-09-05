@@ -5,11 +5,7 @@ import { Server } from "socket.io";
 import { generateContent } from "./src/services/gemini.service.js";
 
 const httpServer = createServer(app);
-const io = new Server(httpServer, { 
-  cors: {
-    origin: "http://localhost:5173",
-  }
- });
+const io = new Server(httpServer, { });
 const chatHistory = [];
 
 io.on('connection', (socket) => {
